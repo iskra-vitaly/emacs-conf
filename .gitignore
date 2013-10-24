@@ -1,0 +1,8 @@
+*.swp
+.netrwhist
+#*#
+!*~
+/autosaves/*
+/backups/*
+/server
+/elpa/
