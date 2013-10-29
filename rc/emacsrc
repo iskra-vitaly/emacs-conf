@@ -2,6 +2,12 @@
   "load my config"
   (load (format "~/.emacs.d/conf/%s.el" conf)))
 
+(defconst 
+  my-lisp 
+  "~/.emacs.d/lisp" 
+  "my lisp path")
+
+(add-to-list 'load-path my-lisp)
 (load-conf 'package-conf)
 (load-conf 'ensime-conf)
 (load-conf 'theme-conf)

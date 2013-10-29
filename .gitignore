@@ -6,3 +6,7 @@
 /backups/*
 /server
 /elpa/
+/url/
+.DS_Store
+/auto-save-list/
+
