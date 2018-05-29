@@ -16,6 +16,7 @@
 (load-conf 'my-stuff)
 (load-conf 'hippie-conf)
 (load-conf 'clojure-conf)
+(load-conf 'prolog-conf)
 
 (setq server-socket-dir "~/.emacs.d")
 (server-start)
@@ -33,3 +34,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
